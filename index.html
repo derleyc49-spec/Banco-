@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaPay — Conta Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="demo-banner">
+    DEMO • SIMULAÇÃO — NÃO É UMA CONTA BANCÁRIA REAL
+  </div>
+  <header class="topbar">
+    <div class="logo">
+      <div class="logo-icon">N</div>
+      <span>NovaPay</span>
+    </div>
+    <div class="profile">
+      <div class="avatar">JD</div>
+      <div>
+        <strong>João Demo</strong>
+        <small>Conta simulada</small>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <section class="welcome">
+      <div>
+        <p>Olá, João 👋</p>
+        <h1>Resumo da conta</h1>
+      </div>
+      <button id="refreshBtn" class="refresh-btn">
+        ↻ Atualizar
+      </button>
+    </section>
+    <section class="balance-card">
+      <div class="balance-header">
+        <span>Saldo disponível</span>
+        <span class="demo-label">DEMO</span>
+      </div>
+      <div class="balance">
+        <span>€</span>
+        <strong id="balance">289.000,00</strong>
+      </div>
+      <div class="account-number">
+        Conta •••• 4821
+      </div>
+      <div class="balance-footer">
+        <span>Saldo total</span>
+        <strong id="totalBalance">€ 289.000,00</strong>
+      </div>
+    </section>
+    <section class="stats">
+      <div class="stat-card">
+        <div class="stat-icon green">↑</div>
+        <div>
+          <span>Entradas</span>
+          <strong id="income">€ 289.000,00</strong>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon blue">↗</div>
+        <div>
+          <span>Movimentos</span>
+          <strong id="movementCount">12</strong>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon purple">€</div>
+        <div>
+          <span>Moeda</span>
+          <strong>EUR</strong>
+        </div>
+      </div>
+    </section>
+    <section class="transactions-section">
+      <div class="section-title">
+        <div>
+          <h2>Movimentos recentes</h2>
+          <p>Transferências simuladas</p>
+        </div>
+        <button id="addTransaction" class="add-btn">
+          + Nova entrada
+        </button>
+      </div>
+      <div id="transactions" class="transactions"></div>
+    </section>
+    <footer>
+      <strong>NovaPay</strong>
+      <span>Interface demonstrativa • Todos os valores são fictícios</span>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
